@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    font-family: montserrat;
+}
+
+#panel{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.556);
+    padding: 1vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+.elems{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.elems h1{
+    font-size: 1.8vw;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.box{
+    font-size: 1.4vw;
+    background-color:rgba(0, 0, 0, 0.794);
+    border-radius: 5px;
+    width: 2vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#container{
+    height: calc(100% - 5vw);
+    width: 100%;
+    /* background-color: rgba(255, 0, 0, 0.55); */
+    background-color: rgba(185, 127, 255, 0.422);
+    padding: 1vw;
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.gameOver{
+    font-size: 8vw;
+    text-transform: uppercase;
+    transition: all ease .1s;
+}
+
+.bubble{
+    width: 4vw;
+    flex-shrink: 0;
+    border-radius: 50%;
+    height: 4vw;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    transition: all ease .1s;
+}
+.bubble:hover{
+    background-color: rgba(77, 77, 77, 0.321);
+}
+.gameOver{
+    transition: all ease 1s;
+}
+.playAgain{
+    background-color: #90a4ae;
+    color: white;
+    padding: .5vw 1vw;
+    border-radius: 10px;
+    font-size: 2vw;
+    text-transform: capitalize;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+.playAgain:hover{
+    background-color: #37474f;
+}
+
+
+@media (max-width:600px) {
+    
+#panel{
+    padding: 10vw 0;
+    height: 20vw;
+}
+
+.elems h1{
+    font-size: 5vw;
+}
+
+.box{
+    font-size: 5vw;
+    width: 10vw;
+}
+
+#container{
+    height: calc(100vh - 20vw);
+    padding: 5vw 1.6vw;
+    gap: 2.4vw;
+}
+
+.gameOver{
+    font-size: 10vw;
+}
+
+.bubble{
+    width: 10vw;
+    height: 10vw;
+}
+.playAgain{
+    padding: 3vw 8vw;
+    font-size: 8vw;
+}
+
+}
